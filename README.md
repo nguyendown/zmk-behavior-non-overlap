@@ -131,12 +131,13 @@ The following example creates a new Non-overlap instance that works separately f
 ## Test
 
 ```shell
-cd path/to/zmk-behavior-non-overlap
-scripts/run-test.sh
+cd /path/to/zmk/app
+ZMK_EXTRA_MODULES="/path/to/zmk-behavior-non-overlap" west test /path/to/zmk-behavior-non-overlap/tests
 ```
 
 For a specific test case.
 
 ```shell
-scripts/run-test.sh tests/wasd
+cd /path/to/zmk/app
+ZMK_EXTRA_MODULES="/path/to/zmk-behavior-non-overlap" west test /path/to/zmk-behavior-non-overlap/tests/basic
 ```
